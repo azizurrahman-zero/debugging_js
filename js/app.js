@@ -20,7 +20,7 @@ const addToLiked = id => {
   showPosts(posts);
 };
 
-const reportPost = (id) => {
+const reportPost = id => {
   reportedPostsId.push(id);
   const remainingPosts = posts.filter((post) => !reportedPostsId.includes(post.id));
   showPosts(remainingPosts);
@@ -30,7 +30,7 @@ const displayContent = text => {
   return text.length < 30 ? text : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
-const switchTab = (id) => {
+const switchTab = id => {
   if (id === "posts") {
     document.getElementById("posts").style.display = "grid";
     document.getElementById("liked").style.display = "none";
