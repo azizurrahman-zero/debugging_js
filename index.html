@@ -57,7 +57,7 @@
     </main>
 
     <!-- Question Answer Section -->
-    <section class="container">
+    <section class="container mb-3" id="question-answer">
         <h1>Q&A</h1>
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
@@ -85,14 +85,43 @@
                 <h2 class="accordion-header" id="flush-headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        Accordion Item #2
+                        What is the difference between Local Storage and Session Storage?
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                        the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                        this being filled with some actual content.</div>
+                    <div class="accordion-body">
+                        Local Storage is that kind of Web Storage that stores data for a long time. On the other hand,
+                        Session Storage stores data for a short time(session). Though there are many similarities
+                        between them (Such as Only Client-Site accessibility, Never transfer data to the server), there
+                        are some differences too. The differences are:
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Basis</th>
+                                    <th scope="col">Local Storage</th>
+                                    <th scope="col">Session Storage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Expiration</th>
+                                    <td>Never Expired</td>
+                                    <td>Expired when Browser Tab is closed</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Storage Capacity</th>
+                                    <td>About 10 MB</td>
+                                    <td>About 5 MB</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Accessible Data from</th>
+                                    <td>Any window of Browser</td>
+                                    <td>Same Tab of Browser</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
